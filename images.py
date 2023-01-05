@@ -34,13 +34,10 @@ for x in range(start_x, start_x + 50, 1):
         bpy.ops.mesh.primitive_cube_add(size=1, location = (x-start_x,y-start_y,height/2), scale=(1, 1, 1))
         
         # coloring
-        '''mat_name = "Material" + str(index)
+        mat_name = "Material" + str(index)
         mat = bpy.data.materials.new(name = mat_name)
         mat.use_nodes = True
         principled = mat.node_tree.nodes["Principled BSDF"]
         principled.inputs[0].default_value = (img.pixels[index], img.pixels[index+1], img.pixels[index+2], img.pixels[index+3])
         cube = bpy.context.active_object
         cube.data.materials.append(mat)
-#local_pixels = list[img.pixels[]]'''
-
-#print ( "Image size: ", width, " x ", height )
